@@ -6,11 +6,18 @@
 /*   By: atoepper <atoepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:29:13 by atoepper          #+#    #+#             */
-/*   Updated: 2023/11/27 13:32:30 by atoepper         ###   ########.fr       */
+/*   Updated: 2025/09/22 11:41:26 by atoepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Checks if the given character is alphabetic
+**
+** @param c: Character to check
+** @return 1 if alphabetic, 0 otherwise
+*/
 
 int	ft_isalpha(int c)
 {

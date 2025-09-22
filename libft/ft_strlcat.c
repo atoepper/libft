@@ -6,11 +6,22 @@
 /*   By: atoepper <atoepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 12:30:49 by atoepper          #+#    #+#             */
-/*   Updated: 2023/11/28 14:20:55 by atoepper         ###   ########.fr       */
+/*   Updated: 2025/09/22 11:55:43 by atoepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Appends the string 'src' to the end of 'dst', ensuring that
+** the total length does not exceed 'dstsize' bytes (including null terminator).
+**
+** @param dst: Destination string buffer
+** @param src: Source string to append
+** @param dstsize: Total size of the destination buffer
+** @return The total length of the string it tried to create
+**         (initial length of dst + length of src)
+*/
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
@@ -38,22 +49,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dest_len] = '\0';
 	return (result);
 }
-
-// size_t	i;
-// 	size_t	j;
-
-// 	i = 0;
-// 	j = 0;
-// 	if (dstsize == 0)
-// 		return (ft_strlen(src));
-// 	if ((int)dstsize <= ft_strlen(dst))
-// 		return (dstsize + ft_strlen(src));
-// 	while (i < dstsize && dst[i])
-// 		i++;
-// 	while (src[j] && i + j + 1 < dstsize)
-// 	{
-// 		dst[i + j] = src[j];
-// 		j++;
-// 	}
-// 	dst[i + j] = '\0';
-// 	return (i + ft_strlen(src));

@@ -6,11 +6,20 @@
 /*   By: atoepper <atoepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 15:25:56 by atoepper          #+#    #+#             */
-/*   Updated: 2024/01/19 11:49:43 by atoepper         ###   ########.fr       */
+/*   Updated: 2025/09/22 11:49:57 by atoepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Writes the integer 'n' to the given file descriptor 'fd'.
+** Handles negative numbers correctly.
+**
+** @param n: Integer to write
+** @param fd: File descriptor to write to
+** @return None
+*/
 
 void	ft_putnbr_fd(int n, int fd)
 {

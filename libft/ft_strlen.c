@@ -3,14 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jweingar <jweingar@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: atoepper <atoepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:53:26 by atoepper          #+#    #+#             */
-/*   Updated: 2024/08/19 11:06:21 by jweingar         ###   ########.fr       */
+/*   Updated: 2025/09/22 11:56:22 by atoepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Calculates the length of the string 'str', excluding the null terminator.
+**
+** @param str: Input string
+** @return Number of characters in the string
+*/
 
 size_t	ft_strlen(char *str)
 {

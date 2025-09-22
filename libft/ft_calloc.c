@@ -6,12 +6,21 @@
 /*   By: atoepper <atoepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 14:51:36 by atoepper          #+#    #+#             */
-/*   Updated: 2023/11/27 13:10:53 by atoepper         ###   ########.fr       */
+/*   Updated: 2025/09/22 11:41:44 by atoepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdint.h>
 #include "libft.h"
+
+/*
+** Allocates memory for an array of count elements of size bytes each
+** and initializes all bytes to zero.
+**
+** @param count: Number of elements
+** @param size: Size of each element in bytes
+** @return Pointer to allocated memory, or NULL if allocation fails
+*/
 
 void	*ft_calloc(size_t count, size_t size)
 {

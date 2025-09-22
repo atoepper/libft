@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jweingar <jweingar@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: atoepper <atoepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 16:57:01 by atoepper          #+#    #+#             */
-/*   Updated: 2024/10/11 10:48:23 by jweingar         ###   ########.fr       */
+/*   Updated: 2025/09/22 11:40:21 by atoepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Counts the number of characters needed to represent an integer
+** as a string (including space for a minus sign if negative).
+**
+** @param n: Integer value
+** @return Number of characters required
+*/
 
 int	count_digits(int n)
 {
@@ -28,6 +36,15 @@ int	count_digits(int n)
 	}
 	return (count);
 }
+
+/*
+** Converts an integer to its string representation and stores
+** the result in the provided buffer.
+**
+** @param nbr: Destination buffer (must be large enough)
+** @param n: Integer value to convert
+** @return None
+*/
 
 void	put_digit(char *nbr, long n)
 {
@@ -52,6 +69,13 @@ void	put_digit(char *nbr, long n)
 		i--;
 	}
 }
+
+/*
+** Allocates and returns a string representing the given integer.
+**
+** @param n: Integer value to convert
+** @return Pointer to the newly allocated string, or NULL on failure
+*/
 
 char	*ft_itoa(int n)
 {

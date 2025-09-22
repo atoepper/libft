@@ -6,11 +6,21 @@
 /*   By: atoepper <atoepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 13:06:43 by atoepper          #+#    #+#             */
-/*   Updated: 2024/01/30 12:04:13 by atoepper         ###   ########.fr       */
+/*   Updated: 2025/09/22 11:54:33 by atoepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Returns a pointer to the first occurrence of the character 'c' 
+** in the string 's'. If 'c' is '\0', returns a pointer to the 
+** null terminator at the end of the string.
+**
+** @param s: Input string
+** @param c: Character to locate
+** @return Pointer to the first occurrence of 'c', or NULL if not found
+*/
 
 char	*ft_strchr(char *s, int c)
 {
@@ -29,17 +39,3 @@ char	*ft_strchr(char *s, int c)
 	}
 	return (0);
 }
-
-// char	*ft_strchr(const char *s, int c)
-// {
-// 	while (*s)
-// 	{
-// 		if (*s == (char)c)
-// 			return ((char *)s);
-// 		s++;
-// 	}
-// 	if ((char)c == '\0')
-// 		return ((char *)s);
-// 	else
-// 		return (NULL);
-// }

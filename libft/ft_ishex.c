@@ -6,11 +6,19 @@
 /*   By: atoepper <atoepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 12:22:43 by atoepper          #+#    #+#             */
-/*   Updated: 2024/04/18 09:55:24 by atoepper         ###   ########.fr       */
+/*   Updated: 2025/09/22 11:41:08 by atoepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Checks if the given character is a valid hexadecimal digit
+** (0–9, A–F, or a–f).
+**
+** @param c: Character to check
+** @return 1 if hexadecimal digit, 0 otherwise
+*/
 
 int	ft_ishex(int c)
 {

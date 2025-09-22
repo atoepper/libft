@@ -6,13 +6,22 @@
 /*   By: atoepper <atoepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 07:45:31 by alexander         #+#    #+#             */
-/*   Updated: 2023/11/28 17:19:43 by atoepper         ###   ########.fr       */
+/*   Updated: 2025/09/22 11:53:19 by atoepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
 #include "libft.h"
+
+/*
+** Counts the number of words in the string 's' 
+** separated by the delimiter 'c'.
+**
+** @param s: Input string
+** @param c: Delimiter character
+** @return Number of words in the string
+*/
 
 static int	ft_count_words(char *s, char c)
 {
@@ -37,6 +46,15 @@ static int	ft_count_words(char *s, char c)
 	return (count);
 }
 
+/*
+** Returns the length of the next word in 's' 
+** up to the delimiter 'c' or end of string.
+**
+** @param s: Input string
+** @param c: Delimiter character
+** @return Length of the next word
+*/
+
 static int	ft_nextlen(char *s, char c)
 {
 	char	*pt;
@@ -51,6 +69,16 @@ static int	ft_nextlen(char *s, char c)
 	}
 	return (count);
 }
+
+/*
+** Allocates and fills an array of strings by splitting 's' using delimiter 'c'.
+**
+** @param s: Input string
+** @param arr: Pre-allocated array of strings
+** @param c: Delimiter character
+** @param elem: Number of words to split
+** @return Pointer to the array, or NULL on allocation failure
+*/
 
 static char	**ft_clone(char *s, char **arr, char c, int elem)
 {
@@ -77,6 +105,14 @@ static char	**ft_clone(char *s, char **arr, char c, int elem)
 	return (arr);
 }
 
+/*
+** Frees a partially allocated array of strings.
+**
+** @param arr: Array of strings to free
+** @param len: Number of allocated elements in the array
+** @return None
+*/
+
 static void	ft_free_arr(char **arr, int len)
 {
 	while (len > 0)
@@ -86,6 +122,16 @@ static void	ft_free_arr(char **arr, int len)
 	}
 	free(arr);
 }
+
+/*
+** Splits the string 's' into an array of strings using the delimiter 'c'.
+** Each word is allocated separately. The array is terminated by a NULL pointer.
+**
+** @param s: Input string to split
+** @param c: Delimiter character
+** @return Pointer to the newly allocated array of strings, 
+** or NULL on allocation failure
+*/
 
 char	**ft_split(char const *s, char c)
 {

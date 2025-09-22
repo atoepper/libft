@@ -3,14 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jweingar <jweingar@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: atoepper <atoepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 16:02:45 by atoepper          #+#    #+#             */
-/*   Updated: 2024/09/10 14:13:56 by jweingar         ###   ########.fr       */
+/*   Updated: 2025/09/22 12:01:10 by atoepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Allocates and returns a new string which is the 
+** concatenation of 's1' and 's2'.
+**
+** @param s1: First input string
+** @param s2: Second input string
+** @return Pointer to the newly allocated concatenated string,
+** or NULL if allocation fails
+*/
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

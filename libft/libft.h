@@ -6,7 +6,7 @@
 /*   By: atoepper <atoepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:27:57 by atoepper          #+#    #+#             */
-/*   Updated: 2025/08/11 12:37:52 by atoepper         ###   ########.fr       */
+/*   Updated: 2025/09/22 11:32:49 by atoepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,6 @@ char		*ft_substr(char const *s, unsigned int start, size_t len);
 int			ft_tolower(int c);
 int			ft_toupper(int c);
 void		*ft_memdup(const void *src, size_t size);
-
 
 # ifndef MAX_FD
 #  define MAX_FD 1024

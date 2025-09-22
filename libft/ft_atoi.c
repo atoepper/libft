@@ -6,12 +6,21 @@
 /*   By: atoepper <atoepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 13:43:47 by atoepper          #+#    #+#             */
-/*   Updated: 2024/10/14 17:38:12 by atoepper         ###   ########.fr       */
+/*   Updated: 2025/09/22 11:41:54 by atoepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+/*
+** Converts a string to a long long integer.
+** Skips leading whitespace, handles optional '+' or '-' sign,
+** and parses consecutive digits until a non-digit is found.
+**
+** @param str: Input string to convert
+** @return Converted long long value
+*/
 
 long long	ft_atoi(const char *str)
 {

@@ -6,11 +6,21 @@
 /*   By: atoepper <atoepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 15:47:18 by atoepper          #+#    #+#             */
-/*   Updated: 2024/01/30 12:09:14 by atoepper         ###   ########.fr       */
+/*   Updated: 2025/09/22 11:59:13 by atoepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Returns a new string which is a substring of 's',
+** starting at index 'start' and of maximum length 'len'.
+**
+** @param s: Input string
+** @param start: Starting index of the substring
+** @param len: Maximum length of the substring
+** @return Pointer to the newly allocated substring, or NULL if allocation fails
+*/
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
