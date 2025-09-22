@@ -55,7 +55,7 @@ int main(void)
 ```
 ## get_next_line
 
-get_next_line reads a file descriptor line by line. Each call returns the next line including the newline character, or NULL at EOF.
+`get_next_line` reads a file descriptor line by line. Each call returns the next line including the newline character, or `NULL` at `EOF`.
 
 **Example:**
 
