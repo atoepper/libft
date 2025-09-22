@@ -15,10 +15,6 @@ These projects are designed to improve understanding of C, memory management, li
 - [Libft](#libft)
 - [ft_printf](#ft_printf)
 - [get_next_line](#get_next_line)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Compilation](#compilation)
-- [License](#license)
 
 ---
 
